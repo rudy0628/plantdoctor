@@ -1,0 +1,195 @@
+/*
+
+--- 01 TYPOGRAPHY SYSTEM
+
+    -font weight: 
+    Default: 400
+	medium: 500
+	semi-bold: 600
+	bold: 700
+
+    -line height:
+    Default: 1
+	small: 1.05
+	medium: 1.2
+	paragraph default: 1.6
+
+	-letter spacing:
+	-0.5
+	0.75
+
+    -FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--- 02 COLOR
+
+    -Primary: #20c997
+
+    -Tints: 
+    #e6fcf5
+    #c3fae8
+    -Shades:
+    #13795B 
+    
+    -Accents:
+    #333 
+    #555
+    #aaa
+
+--- 03 SHADOWS
+
+--- 04 BORDER-RADIUS
+	-default: 9px
+    -medium: 11px
+
+--- 05 WHITESPACE
+    -SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Noto Sans TC', sans-serif;
+	line-height: 1;
+	font-weight: 400;
+
+	overflow-x: hidden;
+}
+
+/******************************/
+/* GENERAL CLASS */
+/******************************/
+.container {
+	max-width: 120rem;
+	padding: 0 3.2rem;
+	margin: 0 auto;
+}
+
+.grid {
+	display: grid;
+	row-gap: 9.6rem;
+	column-gap: 6.4rem;
+}
+
+.grid--2-cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--4-cols {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+	align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+	font-weight: 700;
+	letter-spacing: -0.5px;
+	color: #333;
+}
+
+.heading-primary {
+	font-size: 5.2rem;
+	line-height: 1.05;
+	margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+	font-size: 4.4rem;
+	line-height: 1.2;
+	margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+	font-size: 3rem;
+	line-height: 1.2;
+	margin-bottom: 3.2rem;
+}
+
+.subheading {
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 0.75px;
+	text-transform: uppercase;
+	color: #13795b;
+	margin-bottom: 1.6rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	text-decoration: none;
+	padding: 1.6rem 3.2rem;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #333;
+	border-radius: 150px;
+
+	/* transition */
+	transition: all 0.3s ease-in-out;
+
+	/* ONLY FOR BUTTON */
+	cursor: pointer;
+	border: none;
+	font-family: inherit;
+}
+
+.btn--full:link,
+.btn--full:visited {
+	background-color: #20c997;
+}
+
+.btn--full:hover,
+.btn--full:active {
+	background-color: #e6fcf5;
+	box-shadow: inset 0 0 0 3px #20c997;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+	box-shadow: inset 0 0 0 3px #20c997;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+	color: #20c997;
+}
+
+.btn-email,
+.btn--form {
+	align-self: end;
+	padding: 1.2rem;
+	background-color: #e6fcf5;
+	color: #13795b;
+}
+
+.btn-email:hover,
+.btn--form:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+.line-break {
+	color: #333;
+	border: 3px solid #e6fcf5;
+	margin-bottom: 3.6rem;
+}

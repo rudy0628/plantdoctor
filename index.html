@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="植物の守衛是一款結合影像辨識與物聯網的植物照顧APP，擁有檢測植物健康、疾病資料庫、即時監測植物狀態及社群功能，讓新手照顧植物不再是艱深困難的事情">
+    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#">
+            <picture>
+                <source srcset="img/logo.webp" type="image/webp">
+                <source srcset="img/logo-min-png" type="image/png">
+                <img class="logo" src="img/logo.png" alt="plantdoctor logo image">
+            </picture>
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li>
+                    <a href="#section-introduce" class="main-nav-link">簡介</a>
+                </li>
+                <li>
+                    <a href="#section-how" class="main-nav-link">如何使用</a>
+                </li>
+                <li>
+                    <a href="#section-cta" class="main-nav-link cta-link">聯絡我們</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+            <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+            <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+        </button>
+    </header>
+    <main>
+        <section class="section-hero">
+            <div class="hero">
+                <div class="hero-text-box">
+                    <h1 class="heading-primary">你的植物，我來守護</h1>
+                    <p class="hero-text">植物の守衛是一款植物健康照顧的 APP，結合影像辨識與物聯網技術，讓照顧植物不再艱深困難，一起為守護地球植物盡一份心力</p>
+                    <a href="#section-introduce" class="btn btn--full">開始介紹 &darr;</a>
+                    <a href="#" class="btn btn--outline">github</a>
+                    <p class="contest-text"><ion-icon name="medal-outline" class="contest-icon"></ion-icon>2021創新資訊與行動應用競賽行動應用組第二名</p>
+                </div>
+                <div class="hero-img-box">
+                    <picture>
+                        <source srcset="img/hero.webp" type="image/webp">
+                        <source srcset="img/hero-min.png" type="image/png">
+                        <img src="img/hero.png" alt="the plantdoctor image with app UI">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-team">
+            <div class="container">
+                <p class="team-title">our team</p>
+                <div class="team">
+                    <div class="team-box">
+                        <picture>
+                            <source srcset="img/member.webp" type="image/webp">
+                            <source srcset="img/member-min.png" type="image/png">
+                            <img src="img/hero.png" alt="the plantdoctor image with app UI">
+                        </picture>
+                        <p class="team-text">陳政安</p>
+                    </div>
+                    <div class="team-box">
+                        <picture>
+                            <source srcset="img/member.webp" type="image/webp">
+                            <source srcset="img/member-min.png" type="image/png">
+                            <img src="img/hero.png" alt="the plantdoctor image with app UI">
+                        </picture>
+                        <p class="team-text">柯宥綸</p>
+                    </div>
+                    <div class="team-box">
+                        <picture>
+                            <source srcset="img/member.webp" type="image/webp">
+                            <source srcset="img/member-min.png" type="image/png">
+                            <img src="img/hero.png" alt="the plantdoctor image with app UI">
+                        </picture>
+                        <p class="team-text">葉世平</p>
+                    </div>
+                    <div class="team-box">
+                        <picture>
+                            <source srcset="img/member.webp" type="image/webp">
+                            <source srcset="img/member-min.png" type="image/png">
+                            <img src="img/hero.png" alt="the plantdoctor image with app UI">
+                        </picture>
+                        <p class="team-text">李士典</p>
+                    </div>
+                    <div class="team-box">
+                        <picture>
+                            <source srcset="img/member.webp" type="image/webp">
+                            <source srcset="img/member-min.png" type="image/png">
+                            <img src="img/hero.png" alt="the plantdoctor image with app UI">
+                        </picture>
+                        <p class="team-text">管浩彣</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-introduce" id="section-introduce">
+            <div class="container">
+                <span class="subheading">introduce</span>
+                <h2 class="heading-secondary">
+                    影片簡介
+                </h2>
+            </div>
+
+            <div class="introduce">
+                <iframe class="introduce-video" src="https://www.youtube.com/embed/OVBapE0AqcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="section-how" id="section-how">
+            <div class="container">
+                <span class="subheading">how it works</span>
+                <h2 class="heading-secondary">
+                    三步驟簡單判斷植物健康
+                </h2>
+            </div>
+
+            <div class="container grid grid--2-cols grid--center-v">
+                <!-- step 1 -->
+                <div class="step-text-box">
+                    <p class="step-number">01</p>
+                    <h3 class="heading-tertiary">健康檢測</h3>
+                    <p class="step-description">使用健康檢測功能，將相機對準植物葉子靜止不動，畫面上會顯示植物健康或不健康</p>
+                </div>
+                <div class="step-img-box">
+                    <picture>
+                        <source srcset="img/step/step-01-min.png" type="image/webp">
+                        <source srcset="img/step/step-01.webp" type="image/png">
+                        <img src="img/step/step-01-min.png" alt="step 1 image">
+                    </picture>
+                </div>
+
+                <!-- step 2 -->
+                <div class="step-img-box">
+                    <picture>
+                        <source srcset="img/step/step-02-min.png" type="image/webp">
+                        <source srcset="img/step/step-02.webp" type="image/png">
+                        <img src="img/step/step-02-min.png" alt="step 2 image">
+                    </picture>
+                </div>
+                <div class="step-text-box">
+                    <p class="step-number">02</p>
+                    <h3 class="heading-tertiary">植物寶典</h3>
+                    <p class="step-description">檢測植物狀態後，若要改善或維持植物健康，可以使用植物寶典，查詢植物種類及其病徵，可以得知相對應照顧方式</p>
+                </div>
+
+                <!-- step 3 -->
+                <div class="step-text-box">
+                    <p class="step-number">03</p>
+                    <h3 class="heading-tertiary">溫溼度監控</h3>
+                    <p class="step-description">在查詢如何照顧後，藉由植物最重要的元素，溫度及濕度，來輔助照顧或恢復植物健康</p>
+                </div>
+                <div class="step-img-box">
+                    <picture>
+                        <source srcset="img/step/step-03-min.png" type="image/webp">
+                        <source srcset="img/step/step-03.webp" type="image/png">
+                        <img src="img/step/step-03-min.png" alt="step 3 image">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-feature">
+            <div class="container">
+                <span class="subheading">what we have?</span>
+                <h2 class="heading-secondary">
+                    四大功能
+                </h2>
+            </div>
+            <div class="container grid grid--4-cols">
+                <div class="feature-box">
+                    <ion-icon name="medkit-outline" class="feature-icon"></ion-icon>
+                    <p class="feature-heading">健康檢測</p>
+                    <p class="feature-description">結合影像辨識功能，可判斷植物健康或不健康，進而得知如何照顧植物</p>
+                </div>
+                <div class="feature-box">
+                    <ion-icon name="book-outline" class="feature-icon"></ion-icon>
+                    <p class="feature-heading">植物寶典</p>
+                    <p class="feature-description">內有疾病資料庫，可以查詢對應的植物及病症，針對疾病及病徵對症下藥</p>
+                </div>
+                <div class="feature-box">
+                    <ion-icon name="thermometer-outline" class="feature-icon"></ion-icon>
+                    <p class="feature-heading">溫溼度監控</p>
+                    <p class="feature-description">結合 Arduino 物聯網功能，查看植物即時的溫溼度狀況，可以更佳維持植物健康</p>
+                </div>
+                <div class="feature-box">
+                    <ion-icon name="link-outline" class="feature-icon"></ion-icon>
+                    <p class="feature-heading">社群</p>
+                    <p class="feature-description">藉由社群交流獲得更多有關植物的知識，讓種植植物不再是艱深困難的事情</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-cta" id="section-cta">
+            <div class="container">
+                <div class="cta">
+                    <div class="cta-text-box">
+                        <p class="subheading">contact us</p>
+                        <h2 class="heading-secondary">任何問題，聯絡我們</h2>
+                        <form class="cta-form">
+                            <div>
+                                <label for="full-name">姓名</label>
+                                <input type="text" class="full-name" id="full-name" placeholder="王小名" required>
+                            </div>
+                            <div>
+                                <label for="eamil">email</label>
+                                <input type="email" class="eamil" id="eamil" placeholder="me@example.com" required>
+                            </div>
+                            <div>
+                                <label for="where">如何得知我們?</label>
+                                <select name="where" class="where" id="where" required>
+                                    <option value="">請選擇一個選項:</option>
+                                    <option value="friends">朋友</option>
+                                    <option value="youtube">Youtube</option>
+                                    <option value="others">其他</option>
+                                </select>
+                            </div>
+                            <button class="btn btn--form">sign up</button>
+                        </form>
+                        <p class="line-break"></p>
+                        <a href="mailto:s3352250zz@gamil.com" class="btn btn-email">email</a>
+                    </div>
+                    <div class="cta-img-box" role="img" aria-label="snakeplant">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#">
+            <img src="img/logo.png" alt="plantdoctor logo image" class="footer-logo">
+        </a>
+        <p class="footer-text">2021 &copy; plantdoctor reserve allright</p>
+        <div class="footer-icon-box">
+            <a href="#" class="footer-link">
+                <ion-icon name="logo-facebook" class="footer-icon"></ion-icon>
+            </a>
+            <a href="#" class="footer-link">
+                <ion-icon name="logo-instagram" class="footer-icon"></ion-icon>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
